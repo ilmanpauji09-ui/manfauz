@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Diri Muhamad Ilman Pauji</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <chard class="container">
+      <div class="profile-bg">
+        <img src="img/latar belakang.jpeg" alt="Background Profil" class="bg-img" />
+      </div>
+    </div>
+      <div class="container">
+        <div class="profile-section">
+      <img src="img/profil.jpg" alt="Foto Ilman Pauji" class="profile-img" />
+      <h1 class="site-title">Data Diri Muhamad Ilman Pauji</h1>
+    </div>
+
+    <nav class="menu">
+      <button onclick="showSection('data')">Data Diri</button>
+      <button onclick="showSection('skills')">Keahlian</button>
+      <button onclick="showSection('contact')">Kontak</button>
+    </nav>
+
+    <div class="content">
+      <section id="data" class="section hidden">
+        <h2>👤 Data Diri</h2>
+        <p><strong>Nama:</strong> Muhamad Ilman Pauji</p>
+        <p><strong>NIM:</strong> 2510614070</p>
+        <p><strong>Prodi:</strong> Teknik Informatika</p>
+      </section>
+
+      <section id="skills" class="section hidden">
+        <h2>🛠️ Keahlian</h2>
+        <h3>Networking</h3>
+        <img src="img/tkj.jpg" alt="Foto Praktik Networking" class="skill-img" />
+
+        <h3>Internet of Things (IoT)</h3>
+        <img src="img/iot.jpg" alt="Foto Proyek IoT" class="skill-img" />
+        <video controls width="100%" class="skill-video">
+          <source src="img/iot.mp4" type="video/mp4" />
+          Video tidak dapat ditampilkan.
+        </video>
+      </section>
+
+      <section id="contact" class="section hidden">
+        <h2>📱 Kontak</h2>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/pauji_gikrambil" target="_blank">@pauji_gikrambil</a></p>
+        <p><strong>TikTok:</strong> <a href="https://tiktok.com/@mangilman" target="_blank">@mangilman</a></p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
