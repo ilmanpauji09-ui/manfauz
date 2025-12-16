@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Styling CSS</title>
+  <style>
+    /* 1. Font Family */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* 2. Teks Alignment */
+    h1 {
+      text-align: center;
+    }
+
+    /* 3. Font Weight & Style */
+    p:not(.highlight) {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* 4. Teks Decoration */
+    a {
+      text-decoration: none;
+    }
+
+    /* 5. Styling Judul Kartu */
+    .product-card h2 {
+      color: #0056b3;
+    }
+
+    /* 6. Styling Harga */
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 7. ID Unik (Diskon) */
+    #diskon {
+      text-decoration: underline;
+    }
+
+    /* 8. Box Model Demonstration */
+    .box-model-demo {
+      width: 300px;
+      height: 150px;
+      padding: 20px;
+      border: 3px solid #1170af;
+      margin: 30px auto;
+      background-color: #e0f7fa;
+      color: #000;
+      text-align: left;
+    }
+
+    /* Tambahan styling opsional */
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tugas 2: Styling Properti Teks dan Font</h1>
+
+  <p>Ini paragraf pertama yang akan tampil tebal dan miring.</p>
+  <p class="highlight">Ini paragraf kedua dengan class highlight, tampil normal.</p>
+  <p>Ini paragraf ketiga yang juga tampil tebal dan miring.</p>
+
+  <a href="#">Ini adalah link tanpa garis bawah</a>
+
+  <h1>Tugas 3: Aplikasi Selector Lanjutan</h1>
+
+  <!-- Kartu Produk 1 -->
+  <div class="product-card">
+    <h2>Laptop Gaming</h2>
+    <p class="price" id="diskon">Rp 15.000.000</p>
+  </div>
+
+  <!-- Kartu Produk 2 -->
+  <div class="product-card">
+    <h2>Mouse Wireless</h2>
+    <p class="price">Rp 250.000</p>
+  </div>
+
+  <h1>Tugas 4: Box Model (Content, Padding, Border, Margin)</h1>
+
+  <div class="box-model-demo">
+    <p><strong>Box Model Demo:</strong></p>
+    <ul>
+      <li><strong>Content:</strong> Area tempat teks ini berada.</li>
+      <li><strong>Padding:</strong> Ruang antara teks dan border (20px).</li>
+      <li><strong>Border:</strong> Garis biru tebal 3px mengelilingi kotak.</li>
+      <li><strong>Margin:</strong> Jarak luar antar elemen (30px auto).</li>
+    </ul>
+  </div>
+</body>
+</html>
